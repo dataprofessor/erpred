@@ -3,10 +3,10 @@ library(shinyjs)
 library(shinythemes)
 library(markdown)
 
-shinyUI(fluidPage(title="ERpred: A web server for the discovery of estrogen receptor alpha and beta inhibitors", theme=shinytheme("united"),
+shinyUI(fluidPage(title="ERpred: A web server for the prediction of estrogen receptor subtype-specific bioactive inhibitors", theme=shinytheme("united"),
                   useShinyjs(),
                   navbarPage(strong("ERpred"), collapsible = TRUE,
-                             titleContent <- HTML("<b>ERpred</b>: A web server for the discovery of estrogen receptor alpha and beta inhibitors"),
+                             titleContent <- HTML("<b>ERpred</b>: A web server for the prediction of estrogen receptor subtype-specific bioactive inhibitors"),
                              tabPanel("Submit Job", titlePanel(titleContent),
                                       sidebarLayout(
                                         
